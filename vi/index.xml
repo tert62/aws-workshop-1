@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nhận Diện Hình Ảnh Sử Dụng AWS on AWS System Manager</title>
-    <link>http://localhost:1313/aws-workshop-1/vi/</link>
+    <link>http://localhost:1313/aws-workshop-01/vi/</link>
     <description>Recent content in Nhận Diện Hình Ảnh Sử Dụng AWS on AWS System Manager</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/aws-workshop-1/vi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/aws-workshop-01/vi/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

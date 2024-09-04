@@ -1,125 +1,125 @@
 [
 {
-	"uri": "http://localhost:1313/aws-workshop-01/2-iamsetup/2.1-createiamrole/",
+	"uri": "http://localhost:1313/aws-workshop-1/2-iamsetup/2.1-createiamrole/",
 	"title": "Create IAM Role",
 	"tags": [],
 	"description": "",
 	"content": " Access the IAM Service:\nFrom the AWS Management Console, navigate to IAM (Identity and Access Management). Create IAM Role for Lambda:\nIn the IAM dashboard, select Roles from the left-hand menu. Click Create role. Choose Trusted Entity Type:\nSelect trusted entity type: Choose AWS service. Use case: Select Lambda (if you’re setting up a role for a Lambda function). Click Next: Permissions. Attach Permissions Policies:\nSearch for AWSLambdaExecute Search for AmazonRekognitionFullAccess Click Next: Tags Name and Create Role:\nEnter a name for the role Click Create Role Confirm and Use Role:\nAfter creation, you’ll see the new role in the Roles list. "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/4-lambda/4.1-createfunc/",
+	"uri": "http://localhost:1313/aws-workshop-1/4-lambda/4.1-createfunc/",
 	"title": "Create Lambda Function",
 	"tags": [],
 	"description": "",
 	"content": " Access AWS Lambda Service:\nIn the AWS Management Console, find and select Lambda from the list of services. Create a New Lambda Function:\nOn the Lambda page, click the Create function button. Choose a Method to Create the Function:\nAuthor from scratch: Select this option to create a new function from scratch. Function name: Enter a name for your function Runtime: Choose the Python 3.12 runtime environment Lambda Permission:\nSelect use an existing role and choose the IAM Role has created below Create the Function:\nOnce all the information is filled in, click Create function to create your Lambda function. Function is created successful "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/3-s3setup/3.1-creates3bucket/",
+	"uri": "http://localhost:1313/aws-workshop-1/3-s3setup/3.1-creates3bucket/",
 	"title": "Create S3 Bucket",
 	"tags": [],
 	"description": "",
 	"content": " Access Amazon S3 Service:\nFrom the AWS Management Console, find and select S3 from the list of services. Create a New S3 Bucket:\nIn the S3 interface, click the Create bucket button. Configure Bucket Settings:\nEnter a unique name for your bucket. The name must be globally unique Review and Create Bucket:\nCheck all settings you’ve configured. Click Create bucket to complete the process. Confirm and Use Bucket:\nAfter creation, the bucket will appear in your list of buckets in the S3 interface. "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/",
+	"uri": "http://localhost:1313/aws-workshop-1/",
 	"title": "Image Recognition Using AWS",
 	"tags": [],
 	"description": "",
 	"content": "Image Recognition Using AWS Overall In this workshop, we will explore the development of an efficient image recognition system using a combination of AWS services. The focus will be on how to integrate these services to create a functional and effective solution for processing and analyzing images. We will guide you through the overall architecture and workflow of the system, emphasizing how these components work together to deliver a seamless image recognition experience.\nThe application will have a simple architecture as below: Content Introduction IAM Setup S3 Setup Lambda Function Clean up resources "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/1-introduce/",
+	"uri": "http://localhost:1313/aws-workshop-1/1-introduce/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
 	"content": "Before diving into the development of an image recognition system, it’s crucial to understand the overall structure and the role of Amazon Rekognition in the project. This introduction will provide an overview of the fundamental components and objectives of the system, establishing a solid foundation for building and deploying the solution. We will examine the AWS services used, including Amazon Rekognition, and explain why they were chosen and how they work together to create a comprehensive image recognition system. This will ensure a clear understanding of how each service contributes to the overall functionality and effectiveness of the solution.\nContent What is Amazon Rekognition Feature of Rekognition Advantages of Amazon Rekognition Use Case "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/1-introduce/1.1-rekognition/",
+	"uri": "http://localhost:1313/aws-workshop-1/1-introduce/1.1-rekognition/",
 	"title": "What is Amazon Rekognition",
 	"tags": [],
 	"description": "",
 	"content": "Amazon Rekognition is a powerful image and video analysis service offered by Amazon Web Services (AWS). Utilizing deep learning models, Rekognition provides a suite of features for detecting, analyzing, and understanding visual content. It can recognize objects, scenes, and faces in images and videos, as well as perform facial analysis and identify celebrities. The service is designed to be highly scalable and integrates seamlessly with other AWS services, making it an ideal choice for applications that require advanced visual recognition capabilities.\n"
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/1-introduce/1.2-feature/",
+	"uri": "http://localhost:1313/aws-workshop-1/1-introduce/1.2-feature/",
 	"title": "Feature of Rekognition",
 	"tags": [],
 	"description": "",
 	"content": "Amazon Rekognition offers a comprehensive set of features to address various image and video analysis needs:\n1. Object and Scene Detection\nIdentifies and categorizes objects and scenes within visual content, facilitating automated content tagging and categorization. 2. Facial Analysis\nAnalyzes facial features to detect emotions, age range, gender, and other attributes, providing insights into individuals’ reactions and demographics. 3. Facial Recognition\nMatches faces against a database to identify or verify individuals, useful for security and user verification purposes. 4. Text Detection\nExtracts text from images, enabling digitization of printed content and text-based search functionalities. 5. Celebrity Recognition\nIdentifies well-known public figures in media content, enhancing media and entertainment applications. 6. Activity Recognition\nDetects and understands activities in video content, aiding in surveillance and interactive experiences. "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/2-iamsetup/",
+	"uri": "http://localhost:1313/aws-workshop-1/2-iamsetup/",
 	"title": "IAM Setup",
 	"tags": [],
 	"description": "",
 	"content": "Overview AWS Identity and Access Management (IAM) is a key service that enables you to manage user permissions and access to AWS resources securely. By defining roles, users, and policies, IAM allows you to control who can access specific AWS services and what actions they can perform. It supports fine-grained access control, helping you enforce the principle of least privilege and maintain a secure environment. IAM integrates seamlessly with other AWS services, offering a centralized approach to managing credentials and permissions, which is crucial for maintaining robust security and compliance across your AWS infrastructure.\nContent Create IAM Role "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/4-lambda/4.2-rekocode/",
+	"uri": "http://localhost:1313/aws-workshop-1/4-lambda/4.2-rekocode/",
 	"title": "Image Recognition Code",
 	"tags": [],
 	"description": "",
 	"content": " Write Code for the Lambda Function: After creating your Lambda function, scroll down to the code editor where you\u0026rsquo;ll find a basic template. Replace the existing code with the following. import json import boto3 import time def lambda_handler(event, context): client = boto3.client(\u0026#34;rekognition\u0026#34;) s3 = boto3.client(\u0026#34;s3\u0026#34;) start_time = time.time() try: # Fetch the image from S3 print(\u0026#34;Fetching image from S3\u0026#34;) fileObj = s3.get_object(Bucket=\u0026#34;image-analyst-bucket\u0026#34;, Key=\u0026#34;test1.jpg\u0026#34;) file_content = fileObj[\u0026#34;Body\u0026#34;].read() # Not used here but can be used if needed print(\u0026#34;Image fetched, calling Rekognition\u0026#34;) # Detect labels in the image response = client.detect_labels( Image={\u0026#34;S3Object\u0026#34;: {\u0026#34;Bucket\u0026#34;: \u0026#34;image-analyst-bucket\u0026#34;, \u0026#34;Name\u0026#34;: \u0026#34;test1.jpg\u0026#34;}}, MaxLabels=3, MinConfidence=70 ) print(\u0026#34;Rekognition call complete\u0026#34;) # Return response in JSON format return { \u0026#39;statusCode\u0026#39;: 200, \u0026#39;body\u0026#39;: json.dumps(response) # Convert the response to JSON string } except Exception as e: print(f\u0026#34;Error: {str(e)}\u0026#34;) return { \u0026#39;statusCode\u0026#39;: 500, \u0026#39;body\u0026#39;: json.dumps({\u0026#39;error\u0026#39;: str(e)}) } finally: elapsed_time = time.time() - start_time print(f\u0026#34;Total execution time: {elapsed_time} seconds\u0026#34;) Save and Test: Click Deploy to save and deploy the changes and click Test. Result: Here is the Result of the code. "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/3-s3setup/3.2-uploadobject/",
+	"uri": "http://localhost:1313/aws-workshop-1/3-s3setup/3.2-uploadobject/",
 	"title": "Upload Object",
 	"tags": [],
 	"description": "",
 	"content": " Select the Bucket:\nIn the S3 interface, click on the bucket you want to upload the object to. In the bucket page, click the Upload button. Select Files to Upload:\nClick on Add files to select files from your computer. You can also click Add folder to choose a folder and upload all files within that folder. After selecting the files or folder, click Next. Review and Upload:\nCheck the upload settings and make sure everything is correct. Click Upload to start the upload process. Confirm and Manage Object:\nAfter the upload completes, the object will appear in the list of objects in your bucket. "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/1-introduce/1.3-advantage/",
+	"uri": "http://localhost:1313/aws-workshop-1/1-introduce/1.3-advantage/",
 	"title": "Advantages of Amazon Rekognition",
 	"tags": [],
 	"description": "",
 	"content": "Amazon Rekognition provides several benefits that make it a compelling choice for image and video analysis:\nScalability: Handles large volumes of images and videos efficiently, adapting to varying workload demands without compromising performance. Integration: Works seamlessly with other AWS services, such as S3 for storage and Lambda for automation, enhancing overall system functionality. Ease of Use: Offers straightforward API calls for complex image and video analysis tasks, simplifying implementation and integration. Accuracy: Leverages advanced machine learning models to deliver high-accuracy recognition and analysis. Cost-Effectiveness: Features a pay-as-you-go pricing model, allowing you to only pay for the resources and services you use. "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/3-s3setup/",
+	"uri": "http://localhost:1313/aws-workshop-1/3-s3setup/",
 	"title": "S3 Setup",
 	"tags": [],
 	"description": "",
 	"content": "Overview Amazon Simple Storage Service (S3) is a scalable, high-performance object storage service offered by AWS. It provides a reliable and secure way to store and retrieve any amount of data from anywhere on the web. With S3, you can manage your data with features like versioning, data lifecycle policies, and automatic replication across multiple regions to ensure durability and availability. S3 supports a variety of storage classes to optimize cost based on data access patterns, and its integration with other AWS services enables seamless data management and processing. S3’s ease of use, combined with its scalability and flexibility, makes it an essential tool for storing backups, big data, application data, and more. Content 3.1. Create S3 Bucket 3.2. Upload Object\n"
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/4-lambda/4.3-resultexplain/",
+	"uri": "http://localhost:1313/aws-workshop-1/4-lambda/4.3-resultexplain/",
 	"title": "The Test Event and Response",
 	"tags": [],
 	"description": "",
 	"content": "Test Event Name: my-test This test event simulates a scenario where an image is analyzed using AWS Rekognition to identify objects, scenes, or faces. The test event named my-test triggers the image recognition function, producing a detailed JSON response.\nExample Input Image Response Breakdown Status Code: 200\nThis indicates that the request was successfully processed. Response Body:\n{ \u0026#34;Labels\u0026#34;: [ { \u0026#34;Name\u0026#34;: \u0026#34;Executive\u0026#34;, \u0026#34;Confidence\u0026#34;: 99.3196, \u0026#34;Instances\u0026#34;: [], \u0026#34;Parents\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Person\u0026#34;}], \u0026#34;Aliases\u0026#34;: [], \u0026#34;Categories\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Profession\u0026#34;}] }, { \u0026#34;Name\u0026#34;: \u0026#34;Person\u0026#34;, \u0026#34;Confidence\u0026#34;: 99.3196, \u0026#34;Instances\u0026#34;: [ { \u0026#34;BoundingBox\u0026#34;: { \u0026#34;Width\u0026#34;: 0.7698, \u0026#34;Height\u0026#34;: 0.8321, \u0026#34;Left\u0026#34;: 0.2242, \u0026#34;Top\u0026#34;: 0.0346 }, \u0026#34;Confidence\u0026#34;: 95.7176 } ], \u0026#34;Parents\u0026#34;: [], \u0026#34;Aliases\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Human\u0026#34;}], \u0026#34;Categories\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Person Description\u0026#34;}] }, { \u0026#34;Name\u0026#34;: \u0026#34;Man\u0026#34;, \u0026#34;Confidence\u0026#34;: 95.7176, \u0026#34;Instances\u0026#34;: [ { \u0026#34;BoundingBox\u0026#34;: { \u0026#34;Width\u0026#34;: 0.7698, \u0026#34;Height\u0026#34;: 0.8321, \u0026#34;Left\u0026#34;: 0.2242, \u0026#34;Top\u0026#34;: 0.0346 }, \u0026#34;Confidence\u0026#34;: 95.7176 } ], \u0026#34;Parents\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Adult\u0026#34;}, {\u0026#34;Name\u0026#34;: \u0026#34;Male\u0026#34;}, {\u0026#34;Name\u0026#34;: \u0026#34;Person\u0026#34;}], \u0026#34;Aliases\u0026#34;: [], \u0026#34;Categories\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Person Description\u0026#34;}] } ], \u0026#34;LabelModelVersion\u0026#34;: \u0026#34;3.0\u0026#34;, \u0026#34;ResponseMetadata\u0026#34;: { \u0026#34;RequestId\u0026#34;: \u0026#34;8cad309c-717c-4993-8209-2fff9daa4cf2\u0026#34;, \u0026#34;HTTPStatusCode\u0026#34;: 200, \u0026#34;HTTPHeaders\u0026#34;: { \u0026#34;x-amzn-requestid\u0026#34;: \u0026#34;8cad309c-717c-4993-8209-2fff9daa4cf2\u0026#34;, \u0026#34;content-type\u0026#34;: \u0026#34;application/x-amz-json-1.1\u0026#34;, \u0026#34;content-length\u0026#34;: \u0026#34;825\u0026#34;, \u0026#34;date\u0026#34;: \u0026#34;Tue, 03 Sep 2024 14:35:54 GMT\u0026#34; }, \u0026#34;RetryAttempts\u0026#34;: 0 } } Key Elements: Labels: The labels detected in the image include \u0026ldquo;Executive,\u0026rdquo; \u0026ldquo;Person,\u0026rdquo; and \u0026ldquo;Man.\u0026rdquo;\nExecutive: Detected with a high confidence level of 99.3196%. It is associated with the \u0026ldquo;Person\u0026rdquo; parent category and falls under the \u0026ldquo;Profession\u0026rdquo; category. Person: Also detected with the same high confidence level. It is further described with a bounding box that outlines the area of the image containing the person. Man: Identified as a male adult person, with a bounding box and confidence level matching the \u0026ldquo;Person\u0026rdquo; label. Bounding Box: The bounding box provides coordinates and dimensions for where the recognized person is located within the image.\nConfidence Levels: Confidence levels indicate the certainty of the label identification. Values near 100% suggest high accuracy.\nResponse Metadata: Includes details such as the RequestId, HTTP status, headers, and the version of the label model used (3.0).\nFunction Logs START/END/REPORT: These log entries show the lifecycle of the function execution, including its request ID, duration, memory usage, and initialization time. Request ID: a78083e1-6347-4bbd-a2f8-33f77b5bdd31 is unique for this specific function invocation, useful for tracking and debugging. "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/4-lambda/",
+	"uri": "http://localhost:1313/aws-workshop-1/4-lambda/",
 	"title": "Lambda Function",
 	"tags": [],
 	"description": "",
 	"content": "Overview AWS Lambda is a serverless computing service that lets you run code in response to events without provisioning or managing servers. With Lambda, you can execute code for virtually any type of application or backend service, including real-time data processing, API integration, and automated workflows. It supports multiple programming languages and automatically scales to accommodate varying workloads, ensuring high performance and efficiency. You only pay for the compute time you consume, making it a cost-effective solution. Lambda integrates seamlessly with other AWS services, allowing you to build and deploy highly scalable applications with minimal operational overhead.\nContent 4.1. Create Lambda Function 4.2. Image Recognition Code 4.3. The Test Event and Response\n"
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/1-introduce/1.4-usecase/",
+	"uri": "http://localhost:1313/aws-workshop-1/1-introduce/1.4-usecase/",
 	"title": "Use Case",
 	"tags": [],
 	"description": "",
 	"content": "Amazon Rekognition can be applied to a wide range of use cases, including:\nSecurity: Enhances surveillance systems by providing facial recognition and activity detection, improving safety and monitoring capabilities. Content Moderation: Automatically detects inappropriate or harmful content in user-generated media, ensuring a safer online environment. Retail: Personalizes shopping experiences by recognizing products and analyzing customer interactions, leading to targeted marketing and improved customer service. Media and Entertainment: Identifies celebrities and analyzes viewer engagement, providing valuable insights for content creators and advertisers. "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/5-cleanup/",
+	"uri": "http://localhost:1313/aws-workshop-1/5-cleanup/",
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
 	"content": "We will take the following steps to delete the resources we created in this exercise.\nDelete S3 bucket 1. Access Amazon S3\nIn the AWS Management Console, find and select S3 from the list of services. 2. Delete Bucket Contents\nChoose the bucket you want to delete. Go to the Objects tab within the bucket. - Select all objects or select individual objects. - Click Actions, then select Delete and confirm. Confirm and clicking Delete. 3. Delete the Bucket\nReturn to the bucket’s main page. - Select Delete bucket from the Actions menu. Confirm by entering the bucket name and clicking Delete. Delete Lambda Function 1. Access AWS Lambda\nIn the AWS Management Console, find and select Lambda from the list of services. 2. Delete the Function\nChoose the Lambda function you want to delete. On the function’s page, select Actions and then choose Delete. Confirm and clicking Delete. "
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/categories/",
+	"uri": "http://localhost:1313/aws-workshop-1/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://localhost:1313/aws-workshop-01/tags/",
+	"uri": "http://localhost:1313/aws-workshop-1/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

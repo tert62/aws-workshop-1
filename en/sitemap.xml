@@ -2,220 +2,220 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/aws-workshop-01/2-iamsetup/2.1-createiamrole/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/2-iamsetup/2.1-createiamrole/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/2-iamsetup/2.1-createiamrole/"
+                href="http://localhost:1313/aws-workshop-1/vi/2-iamsetup/2.1-createiamrole/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/2-iamsetup/2.1-createiamrole/"
+                href="http://localhost:1313/aws-workshop-1/2-iamsetup/2.1-createiamrole/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/4-lambda/4.1-createfunc/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/4-lambda/4.1-createfunc/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/4-lambda/4.1-createfunc/"
+                href="http://localhost:1313/aws-workshop-1/vi/4-lambda/4.1-createfunc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/4-lambda/4.1-createfunc/"
+                href="http://localhost:1313/aws-workshop-1/4-lambda/4.1-createfunc/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/3-s3setup/3.1-creates3bucket/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/3-s3setup/3.1-creates3bucket/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/3-s3setup/3.1-creates3bucket/"
+                href="http://localhost:1313/aws-workshop-1/vi/3-s3setup/3.1-creates3bucket/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/3-s3setup/3.1-creates3bucket/"
+                href="http://localhost:1313/aws-workshop-1/3-s3setup/3.1-creates3bucket/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/"
+                href="http://localhost:1313/aws-workshop-1/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/"
+                href="http://localhost:1313/aws-workshop-1/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/1-introduce/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/1-introduce/"
+                href="http://localhost:1313/aws-workshop-1/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/1-introduce/"
+                href="http://localhost:1313/aws-workshop-1/1-introduce/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/1-introduce/1.1-rekognition/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/1-introduce/1.1-rekognition/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/1-introduce/1.1-rekognition/"
+                href="http://localhost:1313/aws-workshop-1/vi/1-introduce/1.1-rekognition/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/1-introduce/1.1-rekognition/"
+                href="http://localhost:1313/aws-workshop-1/1-introduce/1.1-rekognition/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/1-introduce/1.2-feature/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/1-introduce/1.2-feature/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/1-introduce/1.2-feature/"
+                href="http://localhost:1313/aws-workshop-1/vi/1-introduce/1.2-feature/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/1-introduce/1.2-feature/"
+                href="http://localhost:1313/aws-workshop-1/1-introduce/1.2-feature/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/2-iamsetup/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/2-iamsetup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/2-iamsetup/"
+                href="http://localhost:1313/aws-workshop-1/vi/2-iamsetup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/2-iamsetup/"
+                href="http://localhost:1313/aws-workshop-1/2-iamsetup/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/4-lambda/4.2-rekocode/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/4-lambda/4.2-rekocode/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/4-lambda/4.2-rekocode/"
+                href="http://localhost:1313/aws-workshop-1/vi/4-lambda/4.2-rekocode/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/4-lambda/4.2-rekocode/"
+                href="http://localhost:1313/aws-workshop-1/4-lambda/4.2-rekocode/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/3-s3setup/3.2-uploadobject/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/3-s3setup/3.2-uploadobject/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/3-s3setup/3.2-uploadobject/"
+                href="http://localhost:1313/aws-workshop-1/vi/3-s3setup/3.2-uploadobject/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/3-s3setup/3.2-uploadobject/"
+                href="http://localhost:1313/aws-workshop-1/3-s3setup/3.2-uploadobject/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/1-introduce/1.3-advantage/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/1-introduce/1.3-advantage/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/1-introduce/1.3-advantage/"
+                href="http://localhost:1313/aws-workshop-1/vi/1-introduce/1.3-advantage/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/1-introduce/1.3-advantage/"
+                href="http://localhost:1313/aws-workshop-1/1-introduce/1.3-advantage/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/3-s3setup/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/3-s3setup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/3-s3setup/"
+                href="http://localhost:1313/aws-workshop-1/vi/3-s3setup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/3-s3setup/"
+                href="http://localhost:1313/aws-workshop-1/3-s3setup/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/4-lambda/4.3-resultexplain/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/4-lambda/4.3-resultexplain/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/4-lambda/4.3-resultexplain/"
+                href="http://localhost:1313/aws-workshop-1/vi/4-lambda/4.3-resultexplain/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/4-lambda/4.3-resultexplain/"
+                href="http://localhost:1313/aws-workshop-1/4-lambda/4.3-resultexplain/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/4-lambda/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/4-lambda/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/4-lambda/"
+                href="http://localhost:1313/aws-workshop-1/vi/4-lambda/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/4-lambda/"
+                href="http://localhost:1313/aws-workshop-1/4-lambda/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/1-introduce/1.4-usecase/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/1-introduce/1.4-usecase/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/1-introduce/1.4-usecase/"
+                href="http://localhost:1313/aws-workshop-1/vi/1-introduce/1.4-usecase/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/1-introduce/1.4-usecase/"
+                href="http://localhost:1313/aws-workshop-1/1-introduce/1.4-usecase/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/5-cleanup/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/5-cleanup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/5-cleanup/"
+                href="http://localhost:1313/aws-workshop-1/vi/5-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/5-cleanup/"
+                href="http://localhost:1313/aws-workshop-1/5-cleanup/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/categories/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/categories/"
+                href="http://localhost:1313/aws-workshop-1/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/categories/"
+                href="http://localhost:1313/aws-workshop-1/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aws-workshop-01/tags/</loc>
+    <loc>http://localhost:1313/aws-workshop-1/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/aws-workshop-01/vi/tags/"
+                href="http://localhost:1313/aws-workshop-1/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aws-workshop-01/tags/"
+                href="http://localhost:1313/aws-workshop-1/tags/"
                 />
   </url>
 </urlset>

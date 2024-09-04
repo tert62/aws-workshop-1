@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lợi ích của Amazon Rekognition on AWS System Manager</title>
-    <link>http://localhost:1313/aws-workshop-01/vi/1-introduce/1.3-advantage/</link>
+    <link>http://localhost:1313/aws-workshop-1/vi/1-introduce/1.3-advantage/</link>
     <description>Recent content in Lợi ích của Amazon Rekognition on AWS System Manager</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/aws-workshop-01/vi/1-introduce/1.3-advantage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/aws-workshop-1/vi/1-introduce/1.3-advantage/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

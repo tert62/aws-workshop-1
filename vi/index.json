@@ -1,0 +1,127 @@
+[
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/1-introduce/1.1-rekognition/",
+	"title": "Amazon Rekognition là gì",
+	"tags": [],
+	"description": "",
+	"content": "Amazon Rekognition là một dịch vụ phân tích hình ảnh và video mạnh mẽ được cung cấp bởi Amazon Web Services (AWS). Sử dụng các mô hình học sâu, Rekognition cung cấp một loạt các tính năng để phát hiện, phân tích và hiểu nội dung hình ảnh. Nó có thể nhận diện các đối tượng, cảnh vật và khuôn mặt trong hình ảnh và video, cũng như thực hiện phân tích khuôn mặt và nhận diện người nổi tiếng. Dịch vụ này được thiết kế để có khả năng mở rộng cao và tích hợp liền mạch với các dịch vụ AWS khác, làm cho nó trở thành sự lựa chọn lý tưởng cho các ứng dụng yêu cầu khả năng nhận diện hình ảnh tiên tiến.\n"
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/1-introduce/",
+	"title": "Giới thiệu",
+	"tags": [],
+	"description": "",
+	"content": "Trước khi bắt tay vào phát triển hệ thống nhận diện hình ảnh, điều quan trọng là phải hiểu cấu trúc tổng thể và vai trò của Amazon Rekognition trong dự án. Phần giới thiệu này sẽ cung cấp cái nhìn tổng quan về các thành phần cơ bản và mục tiêu của hệ thống, từ đó thiết lập nền tảng vững chắc cho việc xây dựng và triển khai giải pháp. Chúng ta sẽ xem xét các dịch vụ AWS được sử dụng, bao gồm Amazon Rekognition, và giải thích lý do tại sao chúng được chọn và cách chúng hoạt động cùng nhau để tạo ra một hệ thống nhận diện hình ảnh toàn diện. Điều này sẽ đảm bảo sự hiểu biết rõ ràng về cách mỗi dịch vụ góp phần vào chức năng và hiệu quả tổng thể của giải pháp.\nNội dung Amazon Rekognition là gì Tính năng của Rekognition Lợi ích của Amazon Rekognition Trường hợp sử dụng "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/",
+	"title": "Nhận Diện Hình Ảnh Sử Dụng AWS",
+	"tags": [],
+	"description": "",
+	"content": "Phát Triển Một Trang Web Chia Sẻ Ảnh Nhanh Chóng Sử Dụng AWS Tổng Quan Trong bài lab này, chúng ta sẽ khám phá việc phát triển một hệ thống nhận diện hình ảnh hiệu quả bằng cách sử dụng kết hợp các dịch vụ AWS. Mục tiêu là tích hợp các dịch vụ này để tạo ra một giải pháp chức năng và hiệu quả cho việc xử lý và phân tích hình ảnh. Chúng tôi sẽ hướng dẫn bạn qua kiến trúc tổng thể và quy trình làm việc của hệ thống, nhấn mạnh cách các thành phần này hoạt động cùng nhau để cung cấp trải nghiệm nhận diện hình ảnh mượt mà.\nỨng dụng sẽ có một kiến trúc đơn giản như hình dưới đây: Nội Dung Giới thiệu Cài đặt IAM Cài đặt S3 Chức Năng Lambda Dọn Dẹp Tài Nguyên "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/4-lambda/4.1-createfunc/",
+	"title": "Tạo Chức năng Lambda",
+	"tags": [],
+	"description": "",
+	"content": " Truy cập Dịch vụ AWS Lambda:\nTrong AWS Management Console, tìm và chọn Lambda từ danh sách các dịch vụ. Tạo Một Lambda Function Mới:\nTrên trang Lambda, nhấp vào nút Create function. Chọn Method Tạo Function:\nAuthor from scratch: Chọn tùy chọn này để tạo một function mới từ scratch. Tên Function: Nhập tên cho function của bạn. Môi trường thực thi: Chọn môi trường thực thi Python 3.12. Lambda Permission:\nChọn use an existing role và chọn IAM Role đã tạo bên dưới. Tạo Function:\nSau khi tất cả thông tin đã được điền, nhấp vào Create function để tạo Lambda function của bạn. Function được tạo thành công. "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/3-s3setup/3.1-creates3bucket/",
+	"title": "Tạo S3 Bucket",
+	"tags": [],
+	"description": "",
+	"content": " Truy cập Dịch vụ Amazon S3:\nTừ AWS Management Console, tìm và chọn S3 từ danh sách các dịch vụ. Tạo Một S3 Bucket Mới:\nTrong giao diện S3, nhấp vào nút Create bucket. Cấu hình Cài đặt Bucket:\nNhập tên duy nhất cho bucket của bạn. Tên phải là duy nhất toàn cầu. Xem lại và Tạo Bucket:\nKiểm tra tất cả các cài đặt mà bạn đã cấu hình. Nhấp vào Create bucket để hoàn tất quá trình. Xác nhận và Sử dụng Bucket:\nSau khi tạo xong, bucket sẽ xuất hiện trong danh sách các bucket của bạn trong giao diện S3. "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/2-iamsetup/2.1-createiamrole/",
+	"title": "Tạo Vai trò IAM",
+	"tags": [],
+	"description": "",
+	"content": " Truy cập Dịch vụ IAM:\nTừ AWS Management Console, điều hướng đến IAM (Identity and Access Management). Tạo IAM Role cho Lambda:\nTrong bảng điều khiển IAM, chọn Role từ menu bên trái. Nhấp vào Create IAM Role. Chọn Trusted Entity Type:\nChọn Trusted Entity Type: Chọn AWS Service. Trường hợp sử dụng: Chọn Lambda (nếu bạn đang thiết lập vai trò cho một Lambda function). Nhấp vào Next: Permissions. Gán Permissions Policies:\nTìm kiếm AWSLambdaExecute Tìm kiếm AmazonRekognitionFullAccess Nhấp vào Next: Tags Đặt Tên và Tạo Role:\nNhập tên cho Role Nhấp vào Create Role Xác nhận và Sử dụng Role:\nSau khi tạo xong, bạn sẽ thấy role mới trong danh sách Roles. "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/2-iamsetup/",
+	"title": "Cài đặt IAM",
+	"tags": [],
+	"description": "",
+	"content": "Tổng quan AWS Identity and Access Management (IAM) là một dịch vụ quan trọng cho phép bạn quản lý quyền và truy cập của người dùng vào các tài nguyên AWS một cách an toàn. Bằng cách xác định các vai trò, người dùng và chính sách, IAM cho phép bạn kiểm soát ai có thể truy cập các dịch vụ AWS cụ thể và những hành động mà họ có thể thực hiện. Dịch vụ hỗ trợ kiểm soát truy cập chi tiết, giúp bạn thực thi nguyên tắc quyền hạn tối thiểu và duy trì môi trường an toàn. IAM tích hợp liền mạch với các dịch vụ AWS khác, cung cấp cách tiếp cận tập trung để quản lý thông tin đăng nhập và quyền hạn, điều này rất quan trọng để duy trì bảo mật và tuân thủ vững chắc trên cơ sở hạ tầng AWS của bạn.\nNội dung Tạo Vai trò IAM "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/4-lambda/4.2-rekocode/",
+	"title": "Mã Nhận diện Hình ảnh",
+	"tags": [],
+	"description": "",
+	"content": " Viết Code cho Lambda Function: Sau khi tạo Lambda function, cuộn xuống code editor nơi bạn sẽ thấy một basic template. Thay thế code hiện tại bằng code sau. import json import boto3 import time def lambda_handler(event, context): client = boto3.client(\u0026#34;rekognition\u0026#34;) s3 = boto3.client(\u0026#34;s3\u0026#34;) start_time = time.time() try: # Fetch the image from S3 print(\u0026#34;Fetching image from S3\u0026#34;) fileObj = s3.get_object(Bucket=\u0026#34;image-analyst-bucket\u0026#34;, Key=\u0026#34;test1.jpg\u0026#34;) file_content = fileObj[\u0026#34;Body\u0026#34;].read() # Not used here but can be used if needed print(\u0026#34;Image fetched, calling Rekognition\u0026#34;) # Detect labels in the image response = client.detect_labels( Image={\u0026#34;S3Object\u0026#34;: {\u0026#34;Bucket\u0026#34;: \u0026#34;image-analyst-bucket\u0026#34;, \u0026#34;Name\u0026#34;: \u0026#34;test1.jpg\u0026#34;}}, MaxLabels=3, MinConfidence=70 ) print(\u0026#34;Rekognition call complete\u0026#34;) # Return response in JSON format return { \u0026#39;statusCode\u0026#39;: 200, \u0026#39;body\u0026#39;: json.dumps(response) # Convert the response to JSON string } except Exception as e: print(f\u0026#34;Error: {str(e)}\u0026#34;) return { \u0026#39;statusCode\u0026#39;: 500, \u0026#39;body\u0026#39;: json.dumps({\u0026#39;error\u0026#39;: str(e)}) } finally: elapsed_time = time.time() - start_time print(f\u0026#34;Total execution time: {elapsed_time} seconds\u0026#34;) Lưu và Kiểm tra: Nhấp vào Deploy để lưu và triển khai các thay đổi, sau đó nhấp vào Test. Kết quả: Đây là Kết quả của đoạn code. "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/3-s3setup/3.2-uploadobject/",
+	"title": "Tải lên Đối tượng",
+	"tags": [],
+	"description": "",
+	"content": " Chọn Bucket:\nTrong giao diện S3, nhấp vào bucket mà bạn muốn tải object lên. Trên trang của bucket, nhấp vào nút Upload. Chọn Tập tin để Tải lên:\nNhấp vào Add files để chọn các tập tin từ máy tính của bạn. Bạn cũng có thể nhấp vào Add folder để chọn một thư mục và tải lên tất cả các tập tin trong thư mục đó. Sau khi chọn các tập tin hoặc thư mục, nhấp vào Next. Xem lại và Tải lên:\nKiểm tra các cài đặt tải lên và đảm bảo mọi thứ chính xác. Nhấp vào Upload để bắt đầu quá trình tải lên. Xác nhận và Quản lý Object:\nSau khi tải lên hoàn tất, object sẽ xuất hiện trong danh sách các object trong bucket của bạn. "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/1-introduce/1.2-feature/",
+	"title": "Tính năng của Rekognition",
+	"tags": [],
+	"description": "",
+	"content": "Amazon Rekognition cung cấp một bộ tính năng toàn diện để đáp ứng các nhu cầu phân tích hình ảnh và video khác nhau:\n1. Phát hiện đối tượng và cảnh vật\nNhận diện và phân loại các đối tượng và cảnh vật trong nội dung hình ảnh, giúp tự động gán thẻ và phân loại nội dung. 2. Phân tích khuôn mặt\nPhân tích các đặc điểm khuôn mặt để phát hiện cảm xúc, khoảng tuổi, giới tính và các thuộc tính khác, cung cấp cái nhìn sâu về phản ứng và nhân khẩu học của cá nhân. 3. Nhận diện khuôn mặt\nSo sánh khuôn mặt với cơ sở dữ liệu để nhận diện hoặc xác minh cá nhân, hữu ích cho mục đích bảo mật và xác thực người dùng. 4. Phát hiện văn bản\nTrích xuất văn bản từ hình ảnh, cho phép số hóa nội dung in ấn và chức năng tìm kiếm dựa trên văn bản. 5. Nhận diện người nổi tiếng\nNhận diện các nhân vật công chúng nổi tiếng trong nội dung truyền thông, nâng cao các ứng dụng trong truyền thông và giải trí. 6. Nhận diện hoạt động\nPhát hiện và hiểu các hoạt động trong nội dung video, hỗ trợ giám sát và trải nghiệm tương tác. "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/3-s3setup/",
+	"title": "Cài đặt S3",
+	"tags": [],
+	"description": "",
+	"content": "Tổng quan Amazon Simple Storage Service (S3) là một dịch vụ lưu trữ đối tượng có thể mở rộng và hiệu suất cao do AWS cung cấp. Nó cung cấp một cách đáng tin cậy và an toàn để lưu trữ và truy xuất bất kỳ lượng dữ liệu nào từ bất kỳ đâu trên web. Với S3, bạn có thể quản lý dữ liệu của mình với các tính năng như phiên bản hóa, chính sách vòng đời dữ liệu và sao chép tự động qua nhiều khu vực để đảm bảo độ bền và khả dụng. S3 hỗ trợ nhiều lớp lưu trữ khác nhau để tối ưu hóa chi phí dựa trên các mẫu truy cập dữ liệu, và việc tích hợp với các dịch vụ AWS khác cho phép quản lý và xử lý dữ liệu một cách liền mạch. Sự dễ sử dụng của S3, kết hợp với khả năng mở rộng và tính linh hoạt của nó, làm cho nó trở thành công cụ thiết yếu để lưu trữ sao lưu, dữ liệu lớn, dữ liệu ứng dụng và nhiều hơn nữa. Nội dung 3.1. Tạo S3 Bucket 3.2. Tải lên Object\n"
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/1-introduce/1.3-advantage/",
+	"title": "Lợi ích của Amazon Rekognition",
+	"tags": [],
+	"description": "",
+	"content": "Amazon Rekognition cung cấp nhiều lợi ích, làm cho nó trở thành một lựa chọn hấp dẫn cho phân tích hình ảnh và video:\nKhả năng mở rộng: Xử lý hiệu quả khối lượng lớn hình ảnh và video, thích ứng với các yêu cầu khối lượng công việc khác nhau mà không ảnh hưởng đến hiệu suất. Tích hợp: Hoạt động liền mạch với các dịch vụ AWS khác, như S3 để lưu trữ và Lambda để tự động hóa, nâng cao chức năng tổng thể của hệ thống. Dễ sử dụng: Cung cấp các gọi API đơn giản cho các nhiệm vụ phân tích hình ảnh và video phức tạp, giúp việc triển khai và tích hợp trở nên dễ dàng hơn. Độ chính xác: Sử dụng các mô hình học máy tiên tiến để cung cấp nhận diện và phân tích với độ chính xác cao. Hiệu quả chi phí: Có mô hình giá theo mức sử dụng, cho phép bạn chỉ trả tiền cho các tài nguyên và dịch vụ mà bạn sử dụng. "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/4-lambda/4.3-resultexplain/",
+	"title": "Sự kiện và Phản hồi Kiểm Tra",
+	"tags": [],
+	"description": "",
+	"content": "Tên Sự Kiện Kiểm Tra: my-test Sự kiện kiểm tra này mô phỏng một kịch bản trong đó một hình ảnh được phân tích bằng AWS Rekognition để nhận diện các đối tượng, cảnh vật hoặc khuôn mặt. Sự kiện kiểm tra có tên my-test kích hoạt chức năng nhận diện hình ảnh, tạo ra một phản hồi JSON chi tiết.\nVí dụ Hình Ảnh Đầu Vào Phân Tích Phản Hồi Mã Trạng Thái: 200\nĐiều này cho biết yêu cầu đã được xử lý thành công. Nội Dung Phản Hồi:\n{ \u0026#34;Labels\u0026#34;: [ { \u0026#34;Name\u0026#34;: \u0026#34;Executive\u0026#34;, \u0026#34;Confidence\u0026#34;: 99.3196, \u0026#34;Instances\u0026#34;: [], \u0026#34;Parents\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Person\u0026#34;}], \u0026#34;Aliases\u0026#34;: [], \u0026#34;Categories\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Profession\u0026#34;}] }, { \u0026#34;Name\u0026#34;: \u0026#34;Person\u0026#34;, \u0026#34;Confidence\u0026#34;: 99.3196, \u0026#34;Instances\u0026#34;: [ { \u0026#34;BoundingBox\u0026#34;: { \u0026#34;Width\u0026#34;: 0.7698, \u0026#34;Height\u0026#34;: 0.8321, \u0026#34;Left\u0026#34;: 0.2242, \u0026#34;Top\u0026#34;: 0.0346 }, \u0026#34;Confidence\u0026#34;: 95.7176 } ], \u0026#34;Parents\u0026#34;: [], \u0026#34;Aliases\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Human\u0026#34;}], \u0026#34;Categories\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Person Description\u0026#34;}] }, { \u0026#34;Name\u0026#34;: \u0026#34;Man\u0026#34;, \u0026#34;Confidence\u0026#34;: 95.7176, \u0026#34;Instances\u0026#34;: [ { \u0026#34;BoundingBox\u0026#34;: { \u0026#34;Width\u0026#34;: 0.7698, \u0026#34;Height\u0026#34;: 0.8321, \u0026#34;Left\u0026#34;: 0.2242, \u0026#34;Top\u0026#34;: 0.0346 }, \u0026#34;Confidence\u0026#34;: 95.7176 } ], \u0026#34;Parents\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Adult\u0026#34;}, {\u0026#34;Name\u0026#34;: \u0026#34;Male\u0026#34;}, {\u0026#34;Name\u0026#34;: \u0026#34;Person\u0026#34;}], \u0026#34;Aliases\u0026#34;: [], \u0026#34;Categories\u0026#34;: [{\u0026#34;Name\u0026#34;: \u0026#34;Person Description\u0026#34;}] } ], \u0026#34;LabelModelVersion\u0026#34;: \u0026#34;3.0\u0026#34;, \u0026#34;ResponseMetadata\u0026#34;: { \u0026#34;RequestId\u0026#34;: \u0026#34;8cad309c-717c-4993-8209-2fff9daa4cf2\u0026#34;, \u0026#34;HTTPStatusCode\u0026#34;: 200, \u0026#34;HTTPHeaders\u0026#34;: { \u0026#34;x-amzn-requestid\u0026#34;: \u0026#34;8cad309c-717c-4993-8209-2fff9daa4cf2\u0026#34;, \u0026#34;content-type\u0026#34;: \u0026#34;application/x-amz-json-1.1\u0026#34;, \u0026#34;content-length\u0026#34;: \u0026#34;825\u0026#34;, \u0026#34;date\u0026#34;: \u0026#34;Tue, 03 Sep 2024 14:35:54 GMT\u0026#34; }, \u0026#34;RetryAttempts\u0026#34;: 0 } } Các Yếu Tố Chính: Labels: Các nhãn phát hiện trong hình ảnh bao gồm \u0026ldquo;Executive,\u0026rdquo; \u0026ldquo;Person,\u0026rdquo; và \u0026ldquo;Man.\u0026rdquo;\nExecutive: Được phát hiện với mức độ tin cậy cao 99.3196%. Nó thuộc danh mục cha \u0026ldquo;Person\u0026rdquo; và nằm trong danh mục \u0026ldquo;Profession.\u0026rdquo; Person: Cũng được phát hiện với mức độ tin cậy cao tương tự. Nó được mô tả thêm với một hộp bao quanh chỉ ra khu vực của hình ảnh chứa người. Man: Được xác định là người đàn ông trưởng thành, với hộp bao quanh và mức độ tin cậy phù hợp với nhãn \u0026ldquo;Person.\u0026rdquo; Bounding Box: Hộp bao quanh cung cấp tọa độ và kích thước của vị trí người được nhận diện trong hình ảnh.\nConfidence Levels: Mức độ tin cậy cho thấy sự chắc chắn của việc nhận diện nhãn. Các giá trị gần 100% cho thấy độ chính xác cao.\nResponse Metadata: Bao gồm các chi tiết như RequestId, trạng thái HTTP, tiêu đề và phiên bản mô hình nhãn được sử dụng (3.0).\nNhật Ký Chức Năng START/END/REPORT: Các mục nhật ký này hiển thị vòng đời của việc thực thi chức năng, bao gồm ID yêu cầu, thời gian thực hiện, mức sử dụng bộ nhớ và thời gian khởi tạo. Request ID: a78083e1-6347-4bbd-a2f8-33f77b5bdd31 là duy nhất cho lần gọi chức năng cụ thể này, hữu ích cho việc theo dõi và gỡ lỗi. "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/4-lambda/",
+	"title": "Chức năng Lambda",
+	"tags": [],
+	"description": "",
+	"content": "Tổng quan AWS Lambda là một dịch vụ tính toán Serverless cho phép bạn chạy mã theo phản ứng với các sự kiện mà không cần cấp phát hoặc quản lý máy chủ. Với Lambda, bạn có thể thực thi mã cho hầu hết mọi loại ứng dụng hoặc dịch vụ backend, bao gồm xử lý dữ liệu thời gian thực, tích hợp API và quy trình tự động. Dịch vụ hỗ trợ nhiều ngôn ngữ lập trình và tự động mở rộng để đáp ứng khối lượng công việc thay đổi, đảm bảo hiệu suất và hiệu quả cao. Bạn chỉ trả tiền cho thời gian tính toán bạn sử dụng, làm cho nó trở thành một giải pháp tiết kiệm chi phí. Lambda tích hợp liền mạch với các dịch vụ AWS khác, cho phép bạn xây dựng và triển khai các ứng dụng có khả năng mở rộng cao với ít công việc vận hành hơn.\nNội dung 4.1. Tạo Lambda Function 4.2. Code Nhận diện Hình ảnh 4.3. Event và Phản hồi Kiểm tra\n"
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/1-introduce/1.4-usecase/",
+	"title": "Trường hợp sử dụng",
+	"tags": [],
+	"description": "",
+	"content": "Amazon Rekognition có thể được áp dụng cho nhiều trường hợp sử dụng khác nhau, bao gồm:\nBảo mật: Cải thiện các hệ thống giám sát bằng cách cung cấp nhận diện khuôn mặt và phát hiện hoạt động, nâng cao khả năng an toàn và giám sát. Kiểm duyệt nội dung: Tự động phát hiện nội dung không phù hợp hoặc có hại trong các phương tiện do người dùng tạo ra, đảm bảo môi trường trực tuyến an toàn hơn. Bán lẻ: Cá nhân hóa trải nghiệm mua sắm bằng cách nhận diện sản phẩm và phân tích tương tác của khách hàng, dẫn đến tiếp thị mục tiêu và dịch vụ khách hàng cải thiện. Truyền thông và Giải trí: Nhận diện người nổi tiếng và phân tích sự tương tác của người xem, cung cấp thông tin quý giá cho các nhà sản xuất nội dung và nhà quảng cáo. "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/5-cleanup/",
+	"title": "Dọn Dẹp Tài Nguyên",
+	"tags": [],
+	"description": "",
+	"content": "Chúng ta sẽ thực hiện các bước sau để xóa các tài nguyên mà chúng ta đã tạo ra trong bài tập này.\nXóa bucket S3 1. Truy cập Amazon S3\nTrong AWS Management Console, tìm và chọn S3 từ danh sách các dịch vụ. 2. Xóa Bucket\nChọn bucket bạn muốn xóa. Đi đến tab Objects trong bucket. - Chọn tất cả các object hoặc chọn các object riêng lẻ. - Nhấp vào Actions, sau đó chọn Delete và xác nhận. Xác nhận và nhấp vào Delete. 3. Xóa Bucket\nQuay lại trang chính của bucket. - Chọn Delete bucket từ menu Actions. Xác nhận bằng cách nhập tên bucket và nhấp vào Delete. Xóa Lambda Function 1. Truy cập AWS Lambda\nTrong AWS Management Console, tìm và chọn Lambda từ danh sách các dịch vụ. 2. Xóa Function\nChọn Lambda function bạn muốn xóa. Trên trang của function, chọn Actions và sau đó chọn Delete. Xác nhận và nhấp vào Delete. "
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://localhost:1313/aws-workshop-1/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
